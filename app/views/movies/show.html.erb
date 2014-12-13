@@ -1,0 +1,9 @@
+<h1><%=@movie["Title"]%></h1>
+
+
+<%@movie.each do |k,v| %>
+  <li><%=k%>: <%=v%> </li>
+<%end %>
+
+
+<%= link_to "Search Again", search_path %>

@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
+  root "movies#search"
   get "/results" => "movies#results"
   get "/search" => "movies#search"
+  get "/movies/:id" => "movies#show", as: "details"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
