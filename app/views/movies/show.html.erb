@@ -1,9 +1,13 @@
 <h1><%=@movie["Title"]%></h1>
 
-<%=image_tag @movie["Poster"]  %>
-<%@movie.each do |k,v| %>
-  <li><%=k%>: <%=v%> </li>
-<%end %>
+<!-- <img src="<%#=@movie['Poster']%>"> -->
+<%=image_tag @movie["Poster"]%>
 
+<!-- <a href=""></a> -->
+<%#=link_to  %>
+
+<%@movie.each do |key,value| %>
+  <li><%=key%>: <%=value%> </li>
+<%end %>
 
 <%= link_to "Search Again", search_path %>
